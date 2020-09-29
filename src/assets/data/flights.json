@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title":"Mumbai-Delhi IA",
+    "date":"2020-09-25T16:14:47.302Z",
+    "startTime":"10:30",
+    "endTime":"18:30",
+    "startLocation":"Mumbai",
+    "endLocation":"Delhi",
+    "stations":2,
+    "totalTime":"8h 00m",
+    "capacity":100,
+    "booked":25,
+    "price":200.00,
+    "rating":7,
+    "intermediateStops": ["Nagpure","Bhilai"]
+  },
+  {
+    "id": 2,
+    "title":"Mumbai-Delhi IA",
+    "date":"2020-09-26T16:14:47.302Z",
+    "startTime":"12:00",
+    "endTime":"7:30",
+    "startLocation":"Mumbai",
+    "endLocation":"Delhi",
+    "stations":1,
+    "totalTime":"7h 30m",
+    "capacity":80,
+    "booked":25,
+    "price":250.00,
+    "rating":8,
+    "intermediateStops": ["Nagpure"]
+  },
+  {
+    "id": 3,
+    "title":"Banglore-Chennai IA",
+    "date":"2020-09-27T16:14:47.302Z",
+    "startTime":"12:00",
+    "endTime":"2:00",
+    "startLocation":"Chennai",
+    "endLocation":"Banglore",
+    "stations":0,
+    "totalTime":"2h 00m",
+    "capacity":10,
+    "booked":2,
+    "price":100.00,
+    "rating":7,
+    "intermediateStops": []
+  }
+]

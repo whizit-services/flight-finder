@@ -1,0 +1,44 @@
+<div class="card sort-card">
+  <div class="border-bottom">
+    <mat-label><h3>Filter:</h3></mat-label>
+  </div>
+  <div class="basic-container">
+    <form action="" [formGroup]="sortForm" class="filter-form">
+      <div class="row form-input">
+        <div class="col-9">
+          <mat-label for="directFlight">Direct Flight:</mat-label>
+        </div>
+        <div class="col-3">
+          <input type="checkbox" (change)="directFlightUpdate($event)" id="directFlight" formControlName="directFlight" class="full-width-input">
+        </div>
+      </div>
+    </form>
+    <div class="row form-input">
+      <div class="col-12">
+        <mat-label for="property">Cost (In $):</mat-label>
+      </div>
+      <div class="col-12">
+        <ng5-slider [(value)]="costOptions.min" [(highValue)]="costOptions.max" [options]="costOptions"
+                (valueChange)="filterList()"></ng5-slider>
+      </div>
+    </div>
+    <div class="row form-input">
+      <div class="col-12">
+        <mat-label for="sortBy">Stations:</mat-label>
+      </div>
+      <div class="col-12">
+        <ng5-slider [(value)]="stationOptions.min" [(highValue)]="stationOptions.max" [options]="stationOptions"
+                    (valueChange)="filterList()"></ng5-slider>
+      </div>
+    </div>
+    <div class="row form-input">
+      <div class="col-12">
+        <mat-label for="sortBy">Size/Length:</mat-label>
+      </div>
+      <div class="col-12">
+        <ng5-slider [(value)]="sizeOptions.min" [(highValue)]="sizeOptions.max" [options]="sizeOptions"
+                    (valueChange)="filterList()"></ng5-slider>
+      </div>
+    </div>
+  </div>
+</div>

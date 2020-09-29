@@ -1,0 +1,19 @@
+<div class="scrolling-section app-home">
+  <div class="fixed bg-plane-img">
+    <div class="row home-page ">
+      <div class="col-6 search-content">
+        <div class="card horizontal-gradient   d-flex align-items-center justify-content-center">
+            <div class="card home-card justify-content-center">
+              <div class="cad-body">
+                <app-search [parent]="'home'" class="search-com" (update)="showAllFlights($event)"></app-search>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-6 d-flex flex-column justify-content-center align-items-center">
+        <h2>Welcome to Flight Finder!</h2>
+        <mat-label>An application to find your flight</mat-label>
+      </div>
+    </div>
+  </div>
+</div>

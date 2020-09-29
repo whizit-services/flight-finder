@@ -1,0 +1,16 @@
+<div class="card basic-container sort-card">
+  <div class="row col-12">
+    <div class="col-3 justify-content-start">
+      <div class="row">Apply Sort <mat-icon>swap_vert</mat-icon> :</div>
+    </div>
+    <div class="col-3 sort-criteria" *ngFor="let property of propertyList">
+      <div class="row justify-content-center" (click)="updateFormData(property)">
+        <div class="text-capitalize">{{property}}</div>
+        <div *ngIf="sortForm.value.property === property">
+          <mat-icon *ngIf="sortForm.value.sortBy === 'highest'">keyboard_arrow_up</mat-icon>
+          <mat-icon *ngIf="sortForm.value.sortBy === 'lowest'">keyboard_arrow_down</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

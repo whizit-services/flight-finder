@@ -1,0 +1,28 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header-login-link {
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding-right: 15px;
+}
+
+.page-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+
+  .mat-button {
+    mat-icon{
+      margin-left: 0.3rem;
+    }
+  }
+}
+
+.mat-icon {
+  vertical-align: text-bottom;
+}

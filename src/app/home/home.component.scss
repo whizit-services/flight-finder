@@ -1,0 +1,33 @@
+@import "../../assets/style/variables";
+
+.app-home {
+  .fixed, .home-page, .card {
+    height: 100%;
+  }
+  .home-page {
+    margin-right: 0px;
+  }
+  .btn-block {
+    display: block;
+    width: 85%;
+  }
+  .btn-outline-info {
+    border-color: $mat-icon-blue;
+
+    mat-icon {
+      margin-left: 1rem;
+      color: #fff;
+    }
+  }
+  .bg-plane-img{
+    background-image: url("../../assets/img/flight.jpg");
+    background-repeat: no-repeat;
+  }
+  .search-content{
+    padding: 0;
+  }
+  .home-card {
+    width: 70%;
+    height: 85%;
+  }
+}

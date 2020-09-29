@@ -1,0 +1,20 @@
+.search-card {
+  padding-top: 2vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  .mat-radio-button {
+    margin-left: 2vw;
+  }
+  .mat-form-field-underline {
+   background-color: #FFFFFF !important;
+  }
+  .icon-btn-close {
+    right: 5vw;
+    position: absolute;
+  }
+  .display-flex {
+    display: flex;
+  }
+}
+

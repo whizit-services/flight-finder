@@ -1,0 +1,8 @@
+<div class="flights-list" *ngIf="isFlightsPresents(); else noFlightsMessage">
+  <app-flight *ngFor="let flight of flights" [flight]="flight"></app-flight>
+</div>
+<ng-template #noFlightsMessage>
+  <div class="not-found-msg justify-content-center text-center">
+    No matching flights found,<br/> Kindly try other options...
+  </div>
+</ng-template>

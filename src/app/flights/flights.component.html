@@ -1,0 +1,22 @@
+<div class="scrolling-section">
+  <div class="fixed">
+    <div class="main-card-content">
+      <div class="horizontal-gradient">
+          <div class="search-flights" *ngIf="showSearch">
+            <app-search [parent]="'flights'" (update)="setAllFlights($event)"></app-search>
+          </div>
+      </div>
+
+      <div class="row space-around">
+        <div class="col-3" *ngIf="showFilter">
+          <app-filter [flights]="flightList" (change)="setAllFlights($event)"></app-filter>
+        </div>
+
+        <div [ngClass]="{'col-9': showFilter, 'col-12': !showFilter}">
+          <app-sort [flights]="flightList" (sort)="setAllFlights($event)"></app-sort>
+          <app-list [flights]="flightList"></app-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

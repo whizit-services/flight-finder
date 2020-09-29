@@ -1,0 +1,42 @@
+.flight-card {
+  margin: 4px 0px;
+  //  border: 1px solid black;
+
+  .flight-card-header {
+    padding: 20px 20px 0px 20px !important;
+    justify-content: center;
+
+    .price-dtl {
+      font-size: 1.5em;
+      font-weight: 500;
+      color: #ef6614;
+    }
+  }
+
+  .flight-body-row, .flight-header-row {
+    margin: 0px 10px;
+  }
+
+  .flight-card-body {
+    padding: 2%;
+    .flight-data {
+      label{
+        width: 100px;
+      }
+
+    }
+
+    .btn-book {
+      margin-top: 5%;
+      button {
+        background-color: #ef6614;
+        color: #FFFFFF;
+        outline: none;
+      }
+    }
+  }
+
+  .flight-seat{
+    padding-right: 10px;
+  }
+}
