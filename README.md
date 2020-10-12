@@ -23,5 +23,24 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## Further help
+ 
+Fill the From and To location details and other optional fields and then click on search which will redirect to next page with searched details.
+ 
+More detailed search can be accessed using “Search Flights”, it will produce view:  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Search: Flights can be filtered by criteria
+A] From Place and To Place (mandatory)
+B] Date / Dates Range
+C] Min / Max / Min-Max Prices
+
+*After filling the details click on “Search” button to apply filters
+
+ 
+*’Clear All’ can be used to clear all applied filters and sorts.
+
+Range and Conditional Filters at Side:
+  
+Sort options at the top of list:
+-	Click on Stations, Date and Price to sort Ascending / Descending.
+ 
+Reset all using ‘Clear All’ button at Top Search bar.
