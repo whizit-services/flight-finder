@@ -11,7 +11,6 @@ export class FlightsComponent implements OnInit {
   showFilter = true;
   flightList = [];
   constructor(private flightService: FlightsService) { }
-
   ngOnInit(): void {
     if (history.state.data) {
       this.setAllFlights(history.state.data);
